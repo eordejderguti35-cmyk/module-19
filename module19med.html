@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Flexbox Centering and Wrapping</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #eef2f5;
+      font-family: Arial, sans-serif;
+    }
+
+    
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;         
+      justify-content: center; 
+      align-content: center;    
+      gap: 20px;               
+      
+      
+      max-width: 560px;
+      width: 90%;              
+      min-height: 450px;
+      padding: 20px;
+      background-color: #ffffff;
+      border: 2px solid #cbd5e1;
+      border-radius: 10px;
+      box-sizing: border-box;
+    }
+
+    .flex-item {
+      width: 240px;
+      height: 110px;
+      background-color: #2563eb;
+      color: white;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      font-weight: bold;
+
+   
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="flex-container">
+    <div class="flex-item">Box 1</div>
+    <div class="flex-item">Box 2</div>
+    <div class="flex-item">Box 3</div>
+    <div class="flex-item">Box 4</div>
+    <div class="flex-item">Box 5</div>
+    <div class="flex-item">Box 6</div>
+  </div>
+
+</body>
+</html>
